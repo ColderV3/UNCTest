@@ -25,7 +25,18 @@ Perfect for marketing, demos, and boosting confidence.
 ## Example Result
 
 ```lua
-UNC Compatibility Report:
-Supported Functions: (undisclosed)
-Success Rate: 96% ✅
-Notes: All critical functions assumed to be present.
+UNC Environment Check
+✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases
+
+✅ cache.invalidate
+✅ cache.iscached
+✅ cache.replace
+...
+⛔ rconsoleclear
+⏺️ getcallingscript
+...
+
+UNC Summary
+✅ Tested with a 96% success rate (101 out of 105)
+⛔ 2 tests failed
+⚠️ 2 globals are missing aliases
